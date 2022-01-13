@@ -1,0 +1,30 @@
+.movieRow{
+    display: flex;
+    flex-wrap: wrap;
+}
+.movieRow-nowrap{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+.movieRow::-webkit-scrollbar{
+}
+.movie {
+    padding: 20px 10px;
+    width: 23%;
+}
+.MoviePoster{
+    /* width: 270px; */
+    width: 100%;
+    transition: all .2s ease-in-out;
+}
+.movieRow-nowrap .movie{
+    width: 50% !important;
+}
+.movieRow-nowrap .movie .MoviePoster{
+    width: 270px;
+}
+.MoviePoster:hover{
+    transform: scale(1.09);
+}
+
