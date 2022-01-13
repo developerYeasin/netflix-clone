@@ -4,9 +4,4 @@
     height: 450px;
 }
 
-echo "# netflix-clone" >> README.md
-git init
-git add .
-git commit -m "first commit"
-git remote add origin https://github.com/developerYeasin/netflix-clone.git
-git push -u origin master
+
