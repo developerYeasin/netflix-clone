@@ -1,7 +1,55 @@
 .banner_background{
-    /* background-image: url('https://image.tmdb.org/t/p/original/aGULNElJVpSru19WP2pUjopPX1U.jpg'); */
     background-size: cover;
-    height: 450px;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    height: 350px;
+    position: relative;
+    z-index: 9;
 }
-
-
+.banner_background::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(180deg, #fff0, #0000003d);
+    /* background: #5959596b; */
+    z-index: -1;
+}
+.banner-contain {
+    position: absolute;
+    color: #fff;
+    width: 40%;
+    top: 28%;
+    left: 10%;
+}
+.banner-title {
+    font-size: 45px;
+    font-weight: 700;
+}
+.banner-btn {
+    margin: 15px 0px;
+}
+.banner-btn .btn {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    background: #0000004f;
+    width: 40%;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 800;
+    padding: 9px;
+    transition: all .3s ease-in-out;
+    margin-right: 10px;
+}
+.banner-btn .btn:hover{
+    background: #fff;
+    color: #111;
+}
+.banner-disc {
+    font-size: 18px;
+    line-height: 18px;
+}

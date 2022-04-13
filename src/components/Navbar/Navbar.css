@@ -1,0 +1,22 @@
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    z-index: 10;
+    box-sizing: border-box;
+    transition: all .5s ease-in-out;
+}
+.nav.active{
+    background: #111;
+}
+.navbar-logo{
+    width: 150px;
+    object-fit: contain;
+}
+.abater{
+    font-size: 50px;
+}

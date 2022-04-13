@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { request } from '../request';
-import './Banner.css'
+import './Banner.css';
 
 const Banner = () => {
     const [movie, setMovie] = useState({})
@@ -18,10 +18,21 @@ const Banner = () => {
     const background_img = {
       backgroundImage: `url(${image}${movie?.backdrop_path})`,
     };
-    console.log(image + movie?.backdrop_path);
+    // console.log(movie);
     return (
       <header className="banner_background" style={background_img}>
-        <div className="banner-contain"></div>
+        <div className="banner-contain">
+          <h2 className="banner-title">{movie?.name}</h2>
+          <div className="banner-btn">
+            <a href="#" className="btn">
+              Play
+            </a>
+            <a href="#" className="btn">
+              My List
+            </a>
+          </div>
+          <p className="banner-disc">{movie?.overview}</p>
+        </div>
       </header>
     );
 };

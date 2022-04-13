@@ -1,4 +1,16 @@
 .movieContainer{
     padding: 0 50px;
     box-sizing: border-box;
+    position: relative;
 }
+.movieContainerBig {
+    position: relative;
+    width: 1288px;
+    height: 527px;
+    margin: auto;
+}
+.main-title{
+    text-transform: uppercase;
+}
+
+

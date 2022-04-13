@@ -1,11 +1,13 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
 import MovieRow from '../MovieRow/MovieRow';
+import Navbar from '../Navbar/Navbar';
 import { request } from '../request';
 
 const Home = () => {
     return (
         <div>
+            <Navbar></Navbar>
             <Banner></Banner>
              <MovieRow title="Netflix Original" movieUrl={request.fetchNetflixOriginals} inLargeRow></MovieRow>
              <MovieRow title="Trending" movieUrl={request.fetchTrending}></MovieRow>
